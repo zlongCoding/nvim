@@ -1,0 +1,13 @@
+{
+  "configurations": {
+    "launch": {
+      "adapter": "vscode-node",
+      "configuration": {
+        "request": "launch",
+        "type": "node",
+        "name": "Debug node",
+        "program": "${file}"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "configurations": {
+    "launch": {
+      "adapter": "vscode-go",
+      "configuration": {
+        "request": "launch",
+        "program": "${file}"
+      }
+    }
+  }
+}
