@@ -27,8 +27,9 @@ require("plugin-config.surround")
 require("plugin-config.comment")
 require("plugin-config.nvim-autopairs")
 require("plugin-config.fidget")
--- 格式化插件
 
+
+-- 格式化插件
 
 require("plugin-config.neoformat")
 require("plugin-config.switch")
@@ -60,7 +61,7 @@ require("lsp.ui")
 --
 -- VimspectorInstall
 -- https://puremourning.github.io/vimspector/configuration.html#remote-debugging-support
-require("dap.vimspector")
+require("spector.vimspector")
 -- require("dap.nvim-dap")
 
 

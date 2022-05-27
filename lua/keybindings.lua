@@ -1,11 +1,3 @@
--- Modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
-
 -- leader key 为空
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
@@ -333,73 +325,11 @@ pluginKeys.mapToggleTerm = function(toggleterm)
 end
 
 
-
-
-
-
--- lsp 回调函数快捷键设置
-pluginKeys.mapLSP = function(mapbuf)
-  -- rename
-  -- mapbuf("n", "gn", "<cmd>Lspsaga rename<CR>", opt)
-  -- -- code action
-  -- mapbuf("n", "gc", "<cmd>Lspsaga code_action<CR>", opt)
-
-  -- mapbuf("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opt)
-
-  -- mapbuf("n", "gh", "<cmd>lua vim.lsp.buf.hover()<CR>", opt)
-
-  -- mapbuf("n", "gr", "<cmd>Lspsaga lsp_finder<CR>", opt)
-
-  -- -- diagnostic
-  -- mapbuf("n", "gp", "<cmd>Lspsaga show_line_diagnostics<CR>", opt)
-  -- mapbuf("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opt)
-  -- mapbuf("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opt)
-  -- mapbuf("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opt)
-  -- mapbuf("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", opt)
-  -- mapbuf("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opt)
-  -- mapbuf('n', "gl", '<cmd>lua vim.diagnostic.setloclist()<CR>', opt)
-  -- mapbuf("n", "gH", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opt)
-  -- mapbuf('n', "gw", '<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>', opt)
-  -- mapbuf('n', "gv", '<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>', opt)
-  -- mapbuf('n', "gL", '<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>', opt)
-
-
-end
-
 -- typescript 快捷键
 pluginKeys.mapTsLSP = function(mapbuf)
   mapbuf("n", "gs", ":TSLspOrganize<CR>", opt)
   mapbuf("n", "gR", ":TSLspRenameFile<CR>", opt)
   mapbuf("n", "gi", ":TSLspImportAll<CR>", opt)
-end
-
--- nvim-dap
-pluginKeys.mapDAP = function()
-  -- 开始
-  map("n", "<leader>dd", ":RustDebuggables<CR>", opt)
-  -- 结束
-  map(
-    "n",
-    "<leader>de",
-    ":lua require'dap'.close()<CR>"
-      .. ":lua require'dap'.terminate()<CR>"
-      .. ":lua require'dap.repl'.close()<CR>"
-      .. ":lua require'dapui'.close()<CR>"
-      .. ":lua require('dap').clear_breakpoints()<CR>"
-      .. "<C-w>o<CR>",
-    opt
-  )
-  -- 继续
-  map("n", "<leader>dc", ":lua require'dap'.continue()<CR>", opt)
-  -- 设置断点
-  map("n", "<leader>dt", ":lua require('dap').toggle_breakpoint()<CR>", opt)
-  map("n", "<leader>dT", ":lua require('dap').clear_breakpoints()<CR>", opt)
-  --  stepOver, stepOut, stepInto
-  map("n", "<leader>dj", ":lua require'dap'.step_over()<CR>", opt)
-  map("n", "<leader>dk", ":lua require'dap'.step_out()<CR>", opt)
-  map("n", "<leader>dl", ":lua require'dap'.step_into()<CR>", opt)
-  -- 弹窗
-  map("n", "<leader>dh", ":lua require'dapui'.eval()<CR>", opt)
 end
 
 -- vimspector

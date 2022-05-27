@@ -140,9 +140,9 @@ packer.startup({
     -- vimspector
     use({'puremourning/vimspector'})
     ----------------------------------------------
-    use("mfussenegger/nvim-dap")
-    use("theHamsta/nvim-dap-virtual-text")
-    use("rcarriga/nvim-dap-ui")
+    -- use("mfussenegger/nvim-dap")
+    -- use("theHamsta/nvim-dap-virtual-text")
+    -- use("rcarriga/nvim-dap-ui")
     -- use("Pocco81/DAPInstall.nvim")
     -- use("jbyuki/one-small-step-for-vimkind")
 
