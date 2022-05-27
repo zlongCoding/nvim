@@ -19,5 +19,5 @@ elif [ -f "./package.json" ]; then
 fi
  
 if [ $targetFileType ]; then
-  cp /Users/longzhang/.config/nvim/lua/dap/vimspector/templates/${targetFileType}.vimspector.json .vimspector.json
+  cp /Users/longzhang/.config/nvim/lua/spector/vimspector/templates/${targetFileType}.vimspector.json .vimspector.json
 fi
