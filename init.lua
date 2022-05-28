@@ -41,6 +41,8 @@ require("plugin-config.vim-illuminate")
 require("plugin-config.vista")
 require("plugin-config.hlargs")
 require("plugin-config.which-key")
+require("plugin-config.treesitter-context")
+
 
 -- Git
 require("plugin-config.gitsigns")

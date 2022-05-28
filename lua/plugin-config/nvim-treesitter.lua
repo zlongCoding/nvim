@@ -15,6 +15,10 @@ treesitter.setup({
     enable = true,
     additional_vim_regex_highlighting = false,
   },
+  autotag = {
+    enable = true,
+    -- filetypes = { "html", "xml", "php", "vue" },
+  },
   -- 启用增量选择模块
   incremental_selection = {
     enable = true,

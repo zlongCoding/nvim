@@ -29,6 +29,7 @@ cmp.setup({
     -- For vsnip users.
     { name = "vsnip" },
     { name = "buffer" },
+     { name = 'spell' },
     -- For luasnip users.
     -- { name = 'luasnip' },
     --For ultisnips users.
@@ -59,3 +60,7 @@ cmp.setup.cmdline(":", {
     { name = "cmdline" },
   }),
 })
+
+-- 拼写建议
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us' }

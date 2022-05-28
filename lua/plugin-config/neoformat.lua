@@ -5,6 +5,7 @@
 
 -- npm install -g lua-fmt
 -- npm install -g prettier
+-- npm install -g prettier-eslint-cli
 -- npm install -g gofmt
 -- pip3 install autopep8
 -- pip3 install sqlformat
