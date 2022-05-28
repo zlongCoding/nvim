@@ -3,36 +3,48 @@
 
 ![预览](./images.gif)
 
+
+如果你想一键安装可以：
+第一步
+创建shell文件夹 随便哪个目录
+```
+
+$ mkdir shell
+```
+第二步，下载shel 脚本
+```
+$ wget https://github.com/zlongCoding/shell/blob/main/nvim.sh
+/**
+|    bashPath='修改成自己的主路径' 
+|  
+|   nvimPath="${bashPath}/Desktop/nvim"  //nvim下载地址
+|   nvimConfig="${bashPath}/.config/nvim"   //nvim 配置地址
+|   zshrcPath="${bashPath}/.zshrc"       //zshrc地址
+|   nvimGitPath='https://github.com/neovim/neovim' 
+**/
+```
+执行shell
+```
+$ chmod u+x ./nvim.sh
+$ ./nvim.sh
+```
+
+第四步：
+```
+//vim 随便打开一个项目
+$  vim
+$ :PackerInstall //下载依赖
+```
+也可以自己安装。
+
+
+
 卸载原来下载的依赖
 ```
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
 rm -rf ~/.cache/nvim
 ```
-
-### 初始化依赖
-
-Packer.vim
-```
--- Regenerate compiled loader file
-:PackerCompile
-
--- Remove any disabled or unused plugins
-:PackerClean
-
--- Clean, then install missing plugins
-:PackerInstall
-
--- Clean, then update and install plugins
-:PackerUpdate
-
--- Perform `PackerUpdate` and then `PackerCompile`
-:PackerSync
-
--- Loads opt plugin immediately
-:PackerLoad completion-nvim ale
-```
-一般我们使用`:PackerSync`
 
 
 ### 快捷键
