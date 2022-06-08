@@ -136,7 +136,7 @@ map("n", "gv", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", opt)
 --
 
 -- map("n", "gL", "<cmd>lua print(vim.inspect(vim.lsp.buf.list_workspace_folders()))<CR>", opt)
-map("n", "gl", "<cmd>TroubleToggle loclis", opt)
+map("n", "gl", "<cmd>TroubleToggle workspace_diagnostics<CR>", opt)
 --------------------------------------------------------------------
 -- 插件快捷键
 local pluginKeys = {}
