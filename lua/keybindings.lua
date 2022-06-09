@@ -274,8 +274,8 @@ pluginKeys.telescopeList = {
 pluginKeys.comment = {
     -- Normal 模式快捷键
     toggler = {
-        line = ",c",
-        block = ",cc"
+        line = ",t",
+        block = ",tt"
     },
     -- Visual 模式
     opleader = {
