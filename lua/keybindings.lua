@@ -284,8 +284,8 @@ pluginKeys.comment = {
     }
 }
 -- ctrl + /
-map("n", "<C-_>", ",c", {noremap = false})
-map("v", "<C-_>", ",c", {noremap = false})
+map("n", "<C-_>", ",t", {noremap = false})
+map("v", "<C-_>", ",t", {noremap = false})
 -- map("i", "<C-_>", ",c", { noremap = false })
 
 -- switch
