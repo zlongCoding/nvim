@@ -152,9 +152,9 @@ map("n", "<leader>]", "<cmd>Neoformat<CR>", opt)
 --       char = "ma",
 --       charWold = "t + char"
 -- hop
-map("n", "mw", "<cmd>HopWord<CR>", opt)
-map("n", "ml", "<cmd>HopLine<CR>", opt)
-map("n", "ma", "<cmd>HopChar1<CR>", opt)
+map("n", ",w", "<cmd>HopWord<CR>", opt)
+map("n", ",a", "<cmd>HopLine<CR>", opt)
+map("n", ",c", "<cmd>HopChar1<CR>", opt)
 
 --- go to preview 装逼插件
 -- definition = "md",
@@ -164,10 +164,10 @@ map("n", "ma", "<cmd>HopChar1<CR>", opt)
 --         -- /<leader>gd
 --         gotoGile = "gd"
 
-map("n", "md", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opt)
-map("n", "mi", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", opt)
-map("n", "mc", "<cmd>lua require('goto-preview').close_all_win()<CR>", opt)
-map("n", "mr", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opt)
+map("n", ",d", "<cmd>lua require('goto-preview').goto_preview_definition()<CR>", opt)
+map("n", ",i", "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>", opt)
+map("n", ",q", "<cmd>lua require('goto-preview').close_all_win()<CR>", opt)
+map("n", ",r", "<cmd>lua require('goto-preview').goto_preview_references()<CR>", opt)
 
 ---- spectre
 
