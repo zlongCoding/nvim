@@ -12,8 +12,9 @@ if fn.empty(fn.glob(install_path)) > 0 then
             "git",
             "clone",
             "--depth",
-            "1", -- "https://github.com/wbthomason/packer.nvim",
-            "https://gitcode.net/mirrors/wbthomason/packer.nvim",
+            "1",
+            "https://github.com/wbthomason/packer.nvim",
+            --- "https://gitcode.net/mirrors/wbthomason/packer.nvim",
             install_path
         }
     )
@@ -122,7 +123,7 @@ packer.startup(
             use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
             use("hrsh7th/cmp-path") -- { name = 'path' }
             use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
-           use("hrsh7th/cmp-nvim-lsp-signature-help") -- { name = 'nvim_lsp_signature_help' }
+            use("hrsh7th/cmp-nvim-lsp-signature-help") -- { name = 'nvim_lsp_signature_help' }
             -- //拼写建议
             use("f3fora/cmp-spell")
 
@@ -241,7 +242,8 @@ packer.startup(
                 "phaazon/hop.nvim",
                 branch = "v1", -- optional but strongly recommended
                 config = function()
-                    require "hop".setup {}
+                    -- you can configure Hop the way you like here; see :h hop-config
+                    require "hop".setup {keys = "etovxqpdygfblzhckisuran"}
                 end
             }
 
