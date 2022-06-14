@@ -23,6 +23,9 @@ local header = {
     "",
     "",
     "",
+    "",
+    "",
+    "",
 }
 dashboard.custom_header = header
 local custom_center = {
@@ -78,12 +81,11 @@ local custom_center = {
 
 
 dashboard.custom_center = {
-  {icon = '',desc= '', action=''}
+  {icon = '',desc= '开始工作吧', action=''}
 }
 
 dashboard.custom_footer = {
     "",
     "",
-    "去吧皮卡丘"
 }
 
