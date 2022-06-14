@@ -87,11 +87,11 @@ packer.startup(
             use("LinArcX/telescope-env.nvim")
             use("nvim-telescope/telescope-ui-select.nvim")
             -- dashboard-nvim
-            -- use("glepnir/dashboard-nvim")
+            use("glepnir/dashboard-nvim")
             --欢迎页
-            use {
-                "goolord/alpha-nvim"
-            }
+            -- use {
+            --     "goolord/alpha-nvim"
+            -- }
             use("folke/which-key.nvim")
             -- project
             use("ahmedkhalf/project.nvim")

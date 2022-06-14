@@ -236,7 +236,7 @@ map("n", "<leader>bp", ":BufferLinePickClose<CR>", opt)
 -- map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 --
-
+map("n", "<leader>fm", ":Telescope marks <CR>", opt)
 map("n", "<leader>fb", ":Telescope buffers <CR>", opt)
 map("n", "<leader>ff", ":Telescope find_files <CR>", opt)
 map("n", "<leader>fa", ":Telescope find_files follow=true no_ignore=true hidden=true <CR>", opt)
