@@ -28,26 +28,21 @@ local g = vim.g
 
 nvim_tree.setup(
     {
-        -- open_on_setup = true,
         -- 隐藏 .文件 和 node_modules 文件夹
         filters = {
             dotfiles = false,
-            custom = {".git"}
+            custom = {".git"},
+            exclude = {".gitignore"}
         },
         disable_netrw = true,
         hijack_netrw = true,
-        ignore_ft_on_setup = {
-          "startify",
-          "dashboard",
-          "alpha",
-        },
+        ignore_ft_on_setup = {"dashboard"},
         -- auto_close = false,
         open_on_tab = false,
         hijack_cursor = true,
-
         hijack_unnamed_buffer_when_opening = false,
         -- 是否根据文件路径，自动更改文件目录
-       update_cwd = false,
+        update_cwd = false,
         update_focused_file = {
             enable = true,
             update_cwd = false
@@ -81,7 +76,6 @@ nvim_tree.setup(
         },
         actions = {
             open_file = {
-                -- quit_on_open = true,
                 resize_window = true
             }
         }

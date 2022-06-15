@@ -52,6 +52,8 @@ map("v", "p", '"_dP', opt)
 -- 退出
 map("n", "qq", ":q!<CR>", opt)
 map("n", "<leader>q", ":qa!<CR>", opt)
+map("n", "<leader>qa", ":quitall<CR>", opt)
+map("n", "<leader>q!", ":quitall!<CR>", opt)
 
 -- insert 模式下，跳到行首行尾
 -- map("i", "<C-h>", "<ESC>I", opt)
